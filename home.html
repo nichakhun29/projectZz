@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body class="bg-white-500 min-h-screen"> 
+    <!-- Navbar สีฟ้า -->
+    <div class="navbar bg-blue-700 text-white shadow-md px-4"> 
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+            <a class="btn btn-ghost text-xl text-white">Nichakhun</a>
+        </div>
+
+        <!-- ปุ่มใน Navbar -->
+        <div class="flex w-full justify-end space-x-2">
+            <a href="expen.html" class="btn btn-sm bg-blue-700 hover:bg-blue-900 text-white border-none rounded-none w-32 h-20 text-center">รายรับรายจ่าย</a>
+            <a href="std.html" class="btn btn-sm bg-blue-700 hover:bg-blue-900 text-white border-none rounded-none w-32 h-20 text-center">รายชื่อนักเรียน</a>
+            <button class="btn btn-sm bg-blue-700 hover:bg-blue-900 text-white border-none rounded-none w-32 h-20" id="checkJwtBtn">CheckJWT</button>
+            <button class="btn btn-sm bg-red-500 hover:bg-red-600 text-white border-none rounded-none w-32 h-20" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <div class="text-center mt-10"> 
+        <h1 class="text-4xl font-bold text-gray-800">Welcome to my homepage!</h1>
+    </div>
+
+    <script src="./script/home.js"></script>
+</body>
+</html>

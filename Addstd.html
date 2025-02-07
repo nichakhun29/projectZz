@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="autumn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>เพิ่มรายชื่อนักเรียน</title>
+</head>
+<body class="h-screen bg-gray-100 flex items-center justify-center">
+
+    <div class="w-full bg-white rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <p class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                เพิ่มรายชื่อนักเรียน
+            </p>
+            <form>
+                <div>
+                    <label class="block mb-2 text-sm font-medium text-gray-900">
+                        รหัสนักเรียน
+                    </label>
+                    <input placeholder="กรอกรหัสนักเรียน" class="input input-bordered input-info w-full max-w w-70" id="stid" name="stid" type="text">
+                </div>
+                <div>
+                    <label class="block mb-2 text-sm font-medium text-gray-900">
+                        ชื่อจริงของนักเรียน
+                    </label>
+                    <input class="input input-bordered input-info w-full max-w w-70" placeholder="กรอกชื่อจริงของนักเรียน" name="firstname" id="firstname" type="text">
+                </div>
+                <div>
+                    <label class="block mb-2 text-sm font-medium text-gray-900">
+                        นามสกุลของนักเรียน
+                    </label>
+                    <input class="input input-bordered input-info w-full max-w w-70" placeholder="กรอกนามสกุลของนักเรียน" id="lastname" name="lastname" type="text">
+                </div>
+                <div class="mt-5">
+
+                <button class="w-full bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-blue-800 text-white" type="submit" onclick="submitData()">
+                    ยืนยันการเพิ่มรายชื่อนักเรียน
+                </button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script src="./script/Addstd.js"></script>
+</body>
+</html>

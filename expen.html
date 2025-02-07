@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="autumn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- เพิ่มบรรทัดนี้ -->
+    <title>รายรับ-รายจ่าย</title>
+</head>
+<body>
+    <div>
+        <center>
+            <h1 class="text-2xl md:text-2xl lg:text-2xl font-bold text-black" ><i class="fa-solid fa-money-bill"></i>รายรับ-รายจ่ายรายวัน</h1>
+            <input type="text" name="search" id="search" class="appearance-none text-md py-1 px-2 focus:outline-none border-2 focus:ring-blue-600 focus:border-blue-600 dark:bg-gray-900 text-purple-900 dark:text-gray-100 placeholder-blue-300 dark:placeholder-gray-600 font-semibold rounded-l" placeholder="ค้นหารายการของคุณ. . .">
+            <button  class="bg-blue-500 hover:bg-blue-800 px-5 py-1 text-lg font-bold hover:shadow-2xl cursor-pointer transition duration-250 ease-in-out rounded-r text-white" color="blue" onclick="handleSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <br>
+            <p>
+                <button class="btn btn-xs bg-blue-500 text-white mt-3 sm:btn-sm md:btn-md lg:btn-lg "><a href="Addexpen.html"><i class="fa-solid fa-plus"></i>เพิ่มรายรับรายจ่าย</a></button>
+            </p>
+            <div id="expens"></div>
+        </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/expen.js"></script>
+</body>
+</html>
